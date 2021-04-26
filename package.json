@@ -7,6 +7,10 @@
     "start": "nodemon server-local.js",
     "build": "netlify-lambda build backend"
     },
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/travdog95/parkeway"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
