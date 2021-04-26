@@ -1,5 +1,6 @@
 const express = require("express");
 const path = require("path");
+const serverless = require('serverless-http');
 
 const app = express();
 
@@ -10,5 +11,3 @@ app.get("/*", (req, res) => {
 });
 
 app.listen(process.env.PORT || 8080, () => console.log("Server running..."));
-
-//Hello
