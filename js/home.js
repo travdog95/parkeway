@@ -51,7 +51,7 @@ const buildProjectCards = () => {
     projectButton.className = "button";
     projectButton.innerHTML = "Request more info";
     projectButton.addEventListener("click", (e) => {
-      console.log("Clicked", project);
+      window.location.href = window.location.origin + "/projects/" + project.id;
     });
 
     projectCardDiv.append(projectButton);
