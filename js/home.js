@@ -1,4 +1,15 @@
 import Projects from "../data/projects.js";
+import { initDefaults } from "./htmlDefaults.js";
+
+//Load page defaults
+initDefaults();
+
+//Add home html
+const response = await fetch(`../html/home.html`);
+const homeHtml = await response.text();
+
+document.getElementById("app").innerHTML = homeHtml;
+
 
 const buildProjectCards = () => {
   const projectCardsContainer = document.querySelector('.project-cards-container');

@@ -1,0 +1,52 @@
+div.project-cards-container {
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+div.project-card {
+  width: 25%;
+  max-width: 350px;
+  min-width: 250px;
+  border: solid 1px var(--clr-neutral-500);
+  padding: 1em;
+  margin: 0 1em 2em 1em;
+  background-color: var(--clr-primary-100);
+  box-shadow: 0 12px 18px -10px var(--clr-neutral-700);
+}
+
+div.project-card div.project-title {
+  text-align: center;
+  font-size: 1.3rem;
+  padding-bottom: .3em;
+}
+
+div.project-card div.project-description,
+div.project-card ul.project-highlights li {
+  line-height: 1.5em;
+}
+
+div.project-card ul.project-highlights,
+div.project-card .button {
+  margin-top: 1em;
+}
+
+div.project-card .button {
+  margin: auto;
+}
+
+@media (max-width: 500px) {
+
+  div.project-cards-container {
+    flex-direction: column;
+  }
+
+  div.project-card {
+    width: 95%;
+    padding: 1em;
+    margin: 0 0 2em 0;
+  }
+}

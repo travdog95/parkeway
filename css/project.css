@@ -1,0 +1,42 @@
+form {
+  display:flex;
+  flex-direction: column;
+  width: 600px;
+
+}
+
+label {
+  width: 100%;
+  margin-top: .5em;
+  font-size: 1.5rem;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+  font-size: 1.5rem;
+  padding: 5px;
+}
+
+.button-container {
+  margin: .5em;
+  padding: .5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  font-size: 1.5rem;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: var(--clr-neutral-200);
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: var(--clr-neutral-200);
+}
+
+::placeholder {
+  color: var(--clr-neutral-200);
+}
