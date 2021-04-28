@@ -49,7 +49,7 @@ const buildProjectCards = () => {
     //Create button
     const projectButton = document.createElement("button");
     projectButton.className = "button";
-    projectButton.innerHTML = "Request more info";
+    projectButton.innerHTML = "Project Details";
     projectButton.addEventListener("click", (e) => {
       window.location.href = window.location.origin + "/projects/" + project.id;
     });
