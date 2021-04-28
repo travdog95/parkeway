@@ -1,0 +1,9 @@
+@media (max-width: 500px) {
+  section {
+    padding: 2em;
+  }
+
+  p {
+    text-align: center;
+  }
+}
